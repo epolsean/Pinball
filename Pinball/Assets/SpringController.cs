@@ -9,7 +9,7 @@ public class SpringController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetButton("Jump"))
+        if (GameManager.springPressed)
         {
             GetComponent<SpringJoint>().spring = 0;
             GetComponent<SpringJoint>().damper = 0;
